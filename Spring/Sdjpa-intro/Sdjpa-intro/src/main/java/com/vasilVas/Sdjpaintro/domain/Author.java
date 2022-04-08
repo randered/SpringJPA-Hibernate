@@ -1,19 +1,17 @@
 package com.vasilVas.Sdjpaintro.domain;
 
 import lombok.*;
-import org.hibernate.Hibernate;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.Objects;
 
+
 @Getter
 @Setter
-@ToString
-@NoArgsConstructor
 @Entity
-@Table(name = "books")
-public class Book {
+@NoArgsConstructor
+public class Author {
 
     @Id
     @GeneratedValue(generator = "uuid")
@@ -21,16 +19,12 @@ public class Book {
     @Column(name = "id", length = 36)
     private String id;
 
-    private String title;
-    private String isbn;
-    private String publisher;
-    private String authorId;
+    private String firstName;
+    private String lastName;
 
-    public Book(String title, String isbn, String publisher, String authorId) {
-        this.title = title;
-        this.isbn = isbn;
-        this.publisher = publisher;
-        this.authorId = authorId;
+    public Author(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     @Override
@@ -38,9 +32,9 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Book book = (Book) o;
+        Author author = (Author) o;
 
-        return Objects.equals(id, book.id);
+        return Objects.equals(id, author.id);
     }
 
     @Override

@@ -1,4 +1,5 @@
 DROP DATABASE IF EXISTS bookdb;
+DROP TABLE IF EXISTS books;
 DROP USER IF EXISTS `bookadmin`@`%`;
 DROP USER IF exists `bookuser`@`%`;
 CREATE DATABASE IF NOT EXISTS bookdb;
