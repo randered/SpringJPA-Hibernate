@@ -3,6 +3,7 @@
   <component name="JpbDataSourceConfig">
     <data-sources>
       <data-source id="850a8206-7448-4086-87da-2475c8a997b4" name="Sdjpa-intro" url="jdbc:h2:file:~/h2/Sdjpa-intro" driverClass="org.h2.Driver" />
+      <data-source id="889cbbed-669f-41dc-a332-f11dd7558857" name="Sdjpa-intro-test" url="jdbc:mysql://localhost/bookdb" driverClass="com.mysql.jdbc.Driver" />
     </data-sources>
     <data-source-infos>
       <data-source-info id="" persistence-unit-name="Default" />
