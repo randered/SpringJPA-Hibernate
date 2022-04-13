@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sdjpa-hibernate-dao-book-dao/sdjpa-hibernate-dao.iml" filepath="$PROJECT_DIR$/sdjpa-hibernate-dao-book-dao/sdjpa-hibernate-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sdjpa-hibernate-dao-book-dao.iml" filepath="$PROJECT_DIR$/.idea/sdjpa-hibernate-dao-book-dao.iml" />
+    </modules>
+  </component>
+</project>

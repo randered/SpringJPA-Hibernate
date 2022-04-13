@@ -6,6 +6,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
+import java.util.function.Consumer;
+
 /**
  * Created by jt on 6/12/21.
  */
@@ -29,9 +31,12 @@ public class DataInitializer implements CommandLineRunner {
         Book bookSIA = new Book("Spring In Action", "234234", "Oriely", null);
         Book savedSIA = bookRepository.save(bookSIA);
 
-        bookRepository.findAll().forEach(book -> {
-            System.out.println("Book Id: " + book.getId());
-            System.out.println("Book Title: " + book.getTitle());
+        bookRepository.findAll().forEach(new Consumer<Book>() {
+            @Override
+            public void accept(Book book) {
+                System.out.println("Book Id: " + book.getId());
+                System.out.println("Book Title: " + book.getTitle());
+            }
         });
 
     }
